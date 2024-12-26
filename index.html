@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>CETREK CETRAK LAMPU</title>
+</head>
+
+<body>
+    <img src="assets/image/off.gif" alt="" id="lampu1" />
+    <h1>CETRAK CETREK LAMPU ON OFF</h1>
+    <button onclick="saklar('on')">NYALAKAN LAMPU</button>
+    <button onclick="saklar('off')">MATIKAN LAMPU</button>
+
+    <!--INI SCRIPT JS-->
+    <script>
+        function saklar(params) {
+            console.log(params);
+
+            let lampu1 = document.getElementById("lampu1")
+            if(params == "on") {
+                lampu1.src = "assets/image/on.gif"
+            }
+            if(params == "off") {
+                lampu1.src = "assets/image/off.gif"
+            }
+
+            return lampu1;
+        }
+    </script>
+
+</body>
+
+</html>
